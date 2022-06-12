@@ -5,3 +5,10 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+#logo{
+    text-align: center;
+    padding:15px
+}
+#logo img{
+    width: 50%;
+}
