@@ -5,10 +5,39 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-#logo{
+header{
+    background-color: rgb(241, 241, 241);
     text-align: center;
-    padding:15px
+}
+#logo{
+    padding:15px;
+    background-color: white;
 }
 #logo img{
     width: 50%;
+}
+.map{
+    background-color: rgb(231, 227, 227);
+    border-top: solid 3px lightgray;
+    font-weight: bold;
+    color: rgb(71, 67, 67);
+    padding: 15px;
+}
+#header-title{
+    margin-top: 27px;
+}
+.H-text{
+    font-weight:lighter;
+}
+button{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    margin: 27px;
+}
+button:hover{
+    color: lightseagreen;
+    background-color: blueviolet;
 }
