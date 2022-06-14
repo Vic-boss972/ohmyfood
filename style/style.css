@@ -6,38 +6,133 @@
     box-sizing: border-box;
 }
 header{
-    background-color: rgb(241, 241, 241);
+    background-color: #F6F6F6;
     text-align: center;
+}
+nav{
+    padding: 30px 3%;
+}
+.light-gray{
+    color: #808080;
+}
+.black{
+    color: #353535;
+}
+.f6{
+    color: #F6F6F6;
+}
+.f2{
+    color: #f2f2f2;
 }
 #logo{
     padding:15px;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 #logo img{
     width: 50%;
 }
 .map{
-    background-color: rgb(231, 227, 227);
+    background-color: #EAEAEA;
     border-top: solid 3px lightgray;
     font-weight: bold;
-    color: rgb(71, 67, 67);
+    color: #353535;
     padding: 15px;
+}
+.map i{
+    padding: 0 20px;
 }
 #header-title{
     margin-top: 27px;
 }
 .H-text{
     font-weight:lighter;
+    color: #4D4D4D;
 }
 button{
-    background-color: blueviolet;
+    background: linear-gradienT(#EB73DA, #9356DC);
     color: aliceblue;
     padding: 15px;
     border: none;
     border-radius: 25px;
     margin: 27px;
+    font-weight: bolder;
 }
-button:hover{
-    color: lightseagreen;
-    background-color: blueviolet;
+.fonctionnement{
+    font-size: 31px;
+}
+.f-list a{
+    display: block;
+    position: relative;
+    font-weight: bold;
+    background-color: #F6F6F6;
+    color:#808080;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.f-list a:hover{
+    color: #9356DC;
+}
+.f-list i{
+    position: absolute;
+    left: 9%;
+}
+.number{
+    position: absolute;
+    width: 18px;
+    left: -8px;
+    background-color: #9356DC;
+    color:#F6F6F6;
+    border-radius: 100px;
+}
+section{
+    background-color: #F6F6F6;
+    padding: 3%;
+}
+.card{
+    margin: 20px 0
+}
+.card-link{
+    display: block;
+    border: solid 1px black;
+}
+.card img{
+    width: 100%;
+    height: 225px;
+    border-radius: 15px 15px 0 0;
+}
+.content-card{
+    background-color: #FFFFFF;
+    border-radius: 0 0 15px 15px;
+    padding: 15px;
+}
+.content-card a{
+    float: right;
+    color: #808080;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition-duration: 2s;
+    transition-property: transform;
+}
+.content-card a:hover{
+    color: #9356DC;
+}
+@keyframes likes{
+    0%{
+        color: #808080;
+    } 100% {
+        color: #9356DC;
+    }
+}
+footer{
+    padding: 15px;
+    line-height: 24px;
+}
+footer h2{
+    margin-bottom: 15px;
+}
+footer, a{
+    background-color: #353535;
+    color: white;
 }
