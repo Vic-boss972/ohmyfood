@@ -91,48 +91,42 @@ section{
     padding: 3%;
 }
 .card{
-    margin: 20px 0
-}
-.card-link{
-    display: block;
-    border: solid 1px black;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border-radius: 25px;
 }
 .card img{
     width: 100%;
-    height: 225px;
-    border-radius: 15px 15px 0 0;
+    height: 200px;
+    border-radius: 25px 25px 0 0;
 }
 .content-card{
-    background-color: #FFFFFF;
-    border-radius: 0 0 15px 15px;
-    padding: 15px;
+    border-radius: 0 0 25px 25px;
+    padding: 2%;
 }
-.content-card a{
-    float: right;
+.content-card p{
+    color: #353535;
+    position: relative;
+}
+.content-card .light-gray{
     color: #808080;
-    background-color: #FFFFFF;
-    cursor: pointer;
-    transition-duration: 2s;
-    transition-property: transform;
 }
-.content-card a:hover{
+.content-card i{
+    position: absolute;
+    right: 5%;
+}
+.content-card i:hover{
     color: #9356DC;
-}
-@keyframes likes{
-    0%{
-        color: #808080;
-    } 100% {
-        color: #9356DC;
-    }
 }
 footer{
     padding: 15px;
     line-height: 24px;
+    background-color: #4D4D4D;
 }
 footer h2{
     margin-bottom: 15px;
+    color: #EAEAEA;
 }
-footer, a{
-    background-color: #353535;
+footer a{
     color: white;
 }
