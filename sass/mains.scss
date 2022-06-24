@@ -1,0 +1,173 @@
+//index
+.w-bouton{
+    text-align: center;
+}
+.button {
+    @include bouton;
+}
+nav {
+    background: $bg-color2;
+    padding: 20px 5% 40px 5%;
+    font-family: $roboto;
+    font-weight: 500;
+
+    
+
+    ul {
+        text-align: center;
+
+        a {
+            display: block;
+            position: relative;
+            padding: 25px 0;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            background: $bg-color1;
+            width: 100%;
+            box-shadow: 6px 6px 6px $map-color;
+
+            &:hover {
+
+                i {
+                    color: $primaire;
+                }
+            }
+
+            .fa-solid {
+                position: absolute;
+                left: 30px;
+                color: gray;
+                font-size: 20px;
+            }
+
+            span {
+                position: absolute;
+                top: 25px;
+                left: -10px;
+                background: $primaire;
+                color: $font-3;
+                border-radius: 100%;
+                padding: 3px 6px;
+
+            }
+        }
+    }
+
+}
+.section {
+    background: $bg-color1;
+    padding: 20px 5% 50px 5%;
+}
+.wrapper-card{
+    position: relative;
+    margin: 30px 0;
+    background: $bg-color1;
+    .nouveau{
+        font-family: $roboto;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        background: #99E2D0;
+        border: solid 1px 	#008766;
+        color: 	#008766;
+        padding: 5px;
+        &:hover{
+            font-weight: 500;
+            transition: 0.5s;
+        }
+        
+    }
+}
+.card {
+    display: block;
+    box-shadow: 6px 6px 6px $map-color;
+    border-radius: 25px;
+    background: $bg-color2;
+        &__img {
+            width: 100%;
+            border-radius: 25px 25px 0 0;
+            background: $bg-color1;
+        }
+
+        &__nom {
+            font-family: $roboto;
+            font-weight: 500;
+            position: relative;
+            margin: 10px 5%;
+        }
+
+        &__descr {
+            font-family: $roboto;
+            font-weight: 300;
+            margin: 0 5%;
+            padding-bottom: 15px;
+        }
+        &__like{
+            position: absolute;
+            font-size: 20px;
+            right: 5%;
+            bottom: 10%;
+            &:hover{
+                display: none;
+            }
+
+        }
+        &__like-on{
+            position: absolute;
+            font-size: 20px;
+            right: 5%;
+            bottom: 10%;
+            color: $font-3;
+            &:hover{
+                color: $primaire;
+                
+                transition: 1s linear;
+            }
+            
+        }
+}
+
+//modif pour pages
+.main-restos{
+    background: $bg-color1;
+    padding: 0px 5% 20px;
+    
+
+}
+
+.sections{
+
+    &__sous_titre{
+        @include section__sous_titre;
+        padding-top: 30px;
+    }
+    .tiret{
+        border: 1px solid $tertiaire;
+        margin: 5px 0 10px 0;
+        width: 53px;
+    }
+    &__elements{
+        background: $bg-color2;
+        border-radius: 15px;
+        margin: 15px 0px;
+        padding: 3%;
+        display: flex;
+    }
+}
+.produit{
+    width: 90%;
+    &__nom{
+        @include produit__nom;
+    }
+    &__descr{
+        @include produit__descr;
+    }
+}
+.prix{
+    width: 10%;
+    text-align: center;
+    .leprix{
+        
+        @include produit__nom;
+    }
+}

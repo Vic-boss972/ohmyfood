@@ -1,0 +1,82 @@
+
+//header index
+header, main {
+    .titre {
+        @include roboto;
+    }
+}
+
+.header {
+    background-color: $bg-color1;
+
+    text-align: center;
+    font-family: $roboto;
+    .retour{
+        font-size: 20px;
+        position: absolute;
+        left: 15px;
+        top: 25px;
+        a{
+            color: $font-2;
+        }
+    }
+    &__figure {
+        background: $bg-color2;
+        display: block;
+        
+    
+        .logo {
+            width: 50%;
+            margin: 20px 0 10px 0;
+        }
+    }
+    &__img{
+        width: 100%;
+        img{
+            width: 100%;
+            height: 250px;
+        }
+    }
+    .map {
+        padding: 20px;
+        font-family: $roboto;
+        font-weight: 500;
+        background-color: $map-color;
+        border-top: solid 1px $font-1 ;
+
+        p {
+            position: relative;
+            color: $font-2;
+
+            i {
+                position: absolute;
+                left: 70px;
+                color: $font-2;
+            }
+        }
+    }
+
+    
+
+    .header__text {
+        color: gray;
+        font-weight: 400;
+        margin: 10px 15px;
+    }
+   
+    
+}
+//header pages
+.bg-palette{
+    
+    background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
+    background-size: 100% 100%;
+}   
+.resto {
+    @include resto;
+    margin-top: 200px;
+    background: $bg-color1;
+    padding: 20px 5% 0px;  
+    border-radius: 25px 25px 0 0; 
+    text-align: left;
+}

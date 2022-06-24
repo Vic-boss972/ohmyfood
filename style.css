@@ -62,7 +62,7 @@ table {
 /*couleurs site*/
 /*couleur des background*/
 /*couleur des polices*/
-body h1 {
+header .titre, main .titre {
   font-family: "roboto", sans-sherif;
   font-weight: bold;
   font-size: 1.5em;
@@ -70,63 +70,94 @@ body h1 {
 }
 
 .header {
-  background: #f6f6f6;
+  background-color: #f6f6f6;
   text-align: center;
   font-family: "roboto", sans-sherif;
 }
+.header .retour {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 25px;
+}
+.header .retour a {
+  color: #464242;
+}
 .header__figure {
   background: #ffffff;
+  display: block;
 }
 .header__figure .logo {
   width: 50%;
   margin: 20px 0 10px 0;
 }
+.header__img {
+  width: 100%;
+}
+.header__img img {
+  width: 100%;
+  height: 250px;
+}
 .header .map {
   padding: 20px;
   font-family: "roboto", sans-sherif;
-  font-weight: bold;
+  font-weight: 500;
   background-color: #EAEAEA;
   border-top: solid 1px #525050;
-  color: #525050;
 }
 .header .map p {
   position: relative;
+  color: #464242;
 }
 .header .map p i {
   position: absolute;
   left: 70px;
-}
-.header h1 {
-  font-family: "roboto", sans-sherif;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 30px 0;
+  color: #464242;
 }
 .header .header__text {
-  color: #464242;
-  font-weight: 300;
+  color: gray;
+  font-weight: 400;
   margin: 10px 15px;
 }
-.header .button {
+
+.bg-palette {
+  background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.resto {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
+  color: black;
+  margin-top: 200px;
+  background: #f6f6f6;
+  padding: 20px 5% 0px;
+  border-radius: 25px 25px 0 0;
+  text-align: left;
+}
+
+.w-bouton {
+  text-align: center;
+}
+
+.button {
+  font-family: "roboto", sans-sherif;
+  font-weight: 500;
   background: linear-gradient(to top left, #9356DC 10%, #ec36a0);
   border: none;
   border-radius: 50px;
-  margin: 30px auto 50px;
+  margin: 30px auto 30px;
   padding: 15px;
+  min-width: 170px;
   color: white;
+  cursor: pointer;
 }
 
 nav {
   background: #ffffff;
-  padding: 20px 5%;
+  padding: 20px 5% 40px 5%;
   font-family: "roboto", sans-sherif;
   font-weight: 500;
-}
-nav h1 {
-  font-family: "roboto", sans-sherif;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 30px 0;
 }
 nav ul {
   text-align: center;
@@ -134,7 +165,7 @@ nav ul {
 nav ul a {
   display: block;
   position: relative;
-  padding: 20px 0;
+  padding: 25px 0;
   margin-bottom: 20px;
   border-radius: 15px;
   background: #f6f6f6;
@@ -148,20 +179,21 @@ nav ul a .fa-solid {
   position: absolute;
   left: 30px;
   color: gray;
+  font-size: 20px;
 }
 nav ul a span {
   position: absolute;
-  top: 16px;
-  left: -5px;
+  top: 25px;
+  left: -10px;
   background: #9356DC;
   color: #ffffff;
   border-radius: 100%;
-  padding: 3px;
+  padding: 3px 6px;
 }
 
-section {
+.section {
   background: #f6f6f6;
-  padding: 50px 5%;
+  padding: 20px 5% 50px 5%;
 }
 
 .wrapper-card {
@@ -228,9 +260,72 @@ section {
   transition: 1s linear;
 }
 
+.main-restos {
+  background: #f6f6f6;
+  padding: 0px 5% 20px;
+}
+
+.sections__sous_titre {
+  font-family: "roboto", sans-sherif;
+  color: #525050;
+  padding-top: 30px;
+}
+.sections .tiret {
+  border: 1px solid #99E2D0;
+  margin: 5px 0 10px 0;
+  width: 53px;
+}
+.sections__elements {
+  background: #ffffff;
+  border-radius: 15px;
+  margin: 15px 0px;
+  padding: 3%;
+  display: flex;
+}
+
+.produit {
+  width: 90%;
+}
+.produit__nom {
+  font-family: "roboto", sans-sherif;
+  font-weight: 500;
+}
+.produit__descr {
+  font-family: "roboto", sans-sherif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.prix {
+  width: 10%;
+  text-align: center;
+}
+.prix .leprix {
+  font-family: "roboto", sans-sherif;
+  font-weight: 500;
+}
+
 footer {
   background: #525050;
+  color: #ffffff;
   padding: 30px;
+}
+footer h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.1em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+footer ul {
+  line-height: 25px;
+}
+footer ul a {
+  color: #ffffff;
+}
+footer ul a i {
+  width: 20px;
+  color: #ffffff;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
