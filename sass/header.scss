@@ -7,7 +7,7 @@ header, main {
 }
 
 .header {
-    background-color: $bg-color1;
+    background-color: $gris-2;
 
     text-align: center;
     font-family: $roboto;
@@ -21,7 +21,7 @@ header, main {
         }
     }
     &__figure {
-        background: $bg-color2;
+        background: $gris-3;
         display: block;
         
     
@@ -41,7 +41,7 @@ header, main {
         padding: 20px;
         font-family: $roboto;
         font-weight: 500;
-        background-color: $map-color;
+        background-color: $gris-1;
         border-top: solid 1px $font-1 ;
 
         p {
@@ -75,7 +75,7 @@ header, main {
 .resto {
     @include resto;
     margin-top: 200px;
-    background: $bg-color1;
+    background: $gris-2;
     padding: 20px 5% 0px;  
     border-radius: 25px 25px 0 0; 
     text-align: left;

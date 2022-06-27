@@ -6,7 +6,7 @@
     @include bouton;
 }
 nav {
-    background: $bg-color2;
+    background: $gris-3;
     padding: 20px 5% 40px 5%;
     font-family: $roboto;
     font-weight: 500;
@@ -22,11 +22,13 @@ nav {
             padding: 25px 0;
             margin-bottom: 20px;
             border-radius: 15px;
-            background: $bg-color1;
+            background: $gris-2;
             width: 100%;
-            box-shadow: 6px 6px 6px $map-color;
+            box-shadow: 6px 6px 6px $gris-1;
 
             &:hover {
+                box-shadow: 6px 6px 8px $font-2;
+        transition: 1s;
 
                 i {
                     color: $primaire;
@@ -55,13 +57,13 @@ nav {
 
 }
 .section {
-    background: $bg-color1;
+    background: $gris-2;
     padding: 20px 5% 50px 5%;
 }
 .wrapper-card{
     position: relative;
     margin: 30px 0;
-    background: $bg-color1;
+    background: $gris-2;
     .nouveau{
         font-family: $roboto;
         position: absolute;
@@ -80,13 +82,17 @@ nav {
 }
 .card {
     display: block;
-    box-shadow: 6px 6px 6px $map-color;
+    box-shadow: 6px 6px 6px $gris-1;
     border-radius: 25px;
-    background: $bg-color2;
+    background: $gris-3;
+    &:hover{
+        box-shadow: 6px 6px 8px $font-2;
+        transition: 1s;
+    }
         &__img {
             width: 100%;
             border-radius: 25px 25px 0 0;
-            background: $bg-color1;
+            background: $gris-2;
         }
 
         &__nom {
@@ -129,7 +135,7 @@ nav {
 
 //modif pour pages
 .main-restos{
-    background: $bg-color1;
+    background: $gris-2;
     padding: 0px 5% 20px;
     
 
@@ -146,28 +152,68 @@ nav {
         margin: 5px 0 10px 0;
         width: 53px;
     }
+    .box{
+        margin: 30px 0;
+    }
     &__elements{
-        background: $bg-color2;
+        background: $gris-3;
         border-radius: 15px;
-        margin: 15px 0px;
-        padding: 3%;
+        box-shadow: 4px 4px 5px $gris-1;
         display: flex;
+        overflow: hidden;
+        &:hover{
+            box-shadow: 4px 5px 8px $font-1;
+            transition: 0.4s;
+            .ok{
+                width: 70px;
+                transition: 0.5s;
+                
+            }
+            .fa-solid{
+                transform: rotate(360deg);
+                transition: 0.6s;
+            }
+        }
     }
 }
 .produit{
-    width: 90%;
+    width: 100%;
+    padding: 15px 0 0 15px;
+    line-height: 20px;
+    overflow: hidden;
     &__nom{
         @include produit__nom;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: "...";
+        
     }
     &__descr{
         @include produit__descr;
     }
 }
+.achat{
+    display: flex;
 .prix{
-    width: 10%;
+    width: 50px;
     text-align: center;
+    padding: 10px;
     .leprix{
         
         @include produit__nom;
+        padding: 10px;
     }
+    
+}
+.ok{
+    background-color: $tertiaire;
+    text-align: center;
+    width: 0px;
+    .fa-solid{
+        margin-top: 25px;
+        color: aliceblue;
+        font-size: 25px;
+        
+    }
+}
 }

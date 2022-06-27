@@ -172,6 +172,10 @@ nav ul a {
   width: 100%;
   box-shadow: 6px 6px 6px #EAEAEA;
 }
+nav ul a:hover {
+  box-shadow: 6px 6px 8px #464242;
+  transition: 1s;
+}
 nav ul a:hover i {
   color: #9356DC;
 }
@@ -221,6 +225,10 @@ nav ul a span {
   box-shadow: 6px 6px 6px #EAEAEA;
   border-radius: 25px;
   background: #ffffff;
+}
+.card:hover {
+  box-shadow: 6px 6px 8px #464242;
+  transition: 1s;
 }
 .card__img {
   width: 100%;
@@ -275,20 +283,41 @@ nav ul a span {
   margin: 5px 0 10px 0;
   width: 53px;
 }
+.sections .box {
+  margin: 30px 0;
+}
 .sections__elements {
   background: #ffffff;
   border-radius: 15px;
-  margin: 15px 0px;
-  padding: 3%;
+  box-shadow: 4px 4px 5px #EAEAEA;
   display: flex;
+  overflow: hidden;
+}
+.sections__elements:hover {
+  box-shadow: 4px 5px 8px #525050;
+  transition: 0.4s;
+}
+.sections__elements:hover .ok {
+  width: 70px;
+  transition: 0.5s;
+}
+.sections__elements:hover .fa-solid {
+  transform: rotate(360deg);
+  transition: 0.6s;
 }
 
 .produit {
-  width: 90%;
+  width: 100%;
+  padding: 15px 0 0 15px;
+  line-height: 20px;
+  overflow: hidden;
 }
 .produit__nom {
   font-family: "roboto", sans-sherif;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: "...";
 }
 .produit__descr {
   font-family: "roboto", sans-sherif;
@@ -296,13 +325,28 @@ nav ul a span {
   font-size: 15px;
 }
 
-.prix {
-  width: 10%;
-  text-align: center;
+.achat {
+  display: flex;
 }
-.prix .leprix {
+.achat .prix {
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+}
+.achat .prix .leprix {
   font-family: "roboto", sans-sherif;
   font-weight: 500;
+  padding: 10px;
+}
+.achat .ok {
+  background-color: #99E2D0;
+  text-align: center;
+  width: 0px;
+}
+.achat .ok .fa-solid {
+  margin-top: 25px;
+  color: aliceblue;
+  font-size: 25px;
 }
 
 footer {
