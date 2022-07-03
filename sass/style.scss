@@ -1,9 +1,12 @@
 @import "libs/reset.scss";
 @import "variables.scss";
 @import "mixin.scss";
+@import "animation.scss";
 @import "header.scss";
 @import "mains.scss";
-
+img{
+    object-fit: cover;
+}
 
 footer{
     background: $font-1;
