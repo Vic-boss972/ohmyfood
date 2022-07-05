@@ -102,11 +102,12 @@ nav {
         width: 100%;
         border-radius: 25px 25px 0 0;
         background: $gris-2;
+        margin-bottom: 10px;
     }
 
     &__nom {
         font-family: $roboto;
-        font-weight: 500;
+        font-weight: 600;
         position: relative;
         margin: 10px 5%;
     }
@@ -121,8 +122,7 @@ nav {
     &__like {
         position: absolute;
         font-size: 20px;
-        right: 5%;
-        //bottom: 10%;
+        right: 1%;
         z-index: 1;
 
         &:hover {
@@ -149,6 +149,7 @@ nav {
 }
 
 //modif pour pages
+
 .main-restos {
     background: $gris-2;
     padding: 0px 5% 20px;

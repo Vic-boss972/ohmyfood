@@ -12,6 +12,7 @@
 @mixin section__sous_titre{
     font-family: $roboto;
     color: $font-1;
+    font-size: 1em;
 }
 @mixin produit__nom {
     font-family: $roboto;

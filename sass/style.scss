@@ -4,16 +4,13 @@
 @import "animation.scss";
 @import "header.scss";
 @import "mains.scss";
-img{
-    object-fit: cover;
-}
 
 footer{
     background: $font-1;
     color: $font-3;
     padding: 30px;
     
-    h1{
+    h3{
         @include shrikhand;
         margin-bottom: 20px;
     }

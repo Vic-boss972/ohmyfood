@@ -58,7 +58,7 @@ header, main {
     
 
     .header__text {
-        color: gray;
+        color: $font-2;
         font-weight: 400;
         margin: 10px 15px;
     }
@@ -74,7 +74,10 @@ header, main {
     @include resto;
     margin-top: 200px;
     background: $gris-2;
-    padding: 20px 5% 0px;  
+    padding: 40px 5% 0px;  
     border-radius: 25px 25px 0 0; 
     text-align: left;
+    .card__like{
+        right: 10%;
+    }
 }
