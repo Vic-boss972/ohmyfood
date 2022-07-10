@@ -33,6 +33,11 @@
     font-size: 2.5em;
     color: black;
 }
+@mixin logochargement2{
+    font-family: $titres;
+    font-size: 5em;
+    color: black;
+}
 @mixin resto{
     font-family: $titres;
     font-size: 1.5em;

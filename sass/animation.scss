@@ -113,3 +113,37 @@
         width: 200%;
     }
 }
+
+@keyframes volets{
+    0%{
+        transform: rotateX(-90deg);
+    }
+    50%{
+        transform: rotateX(-90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+@keyframes volets2{
+    0%{
+        transform: rotateX(-90deg);
+    }
+    55%{
+        transform: rotateX(-90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+@keyframes volets3{
+    0%{
+        transform: rotateX(-90deg);
+    }
+    60%{
+        transform: rotateX(-90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}

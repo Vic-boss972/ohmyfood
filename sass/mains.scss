@@ -5,6 +5,10 @@
 
 .button {
     @include bouton;
+    transition:  opacity 1s;
+    &:hover{
+        opacity: 0.8;
+    }
 }
 
 nav {
@@ -93,6 +97,9 @@ nav {
     border-radius: 25px;
     background: $gris-3;
     transition: box-shadow 1s;
+    img{
+        height: 200px;
+    }
 
     &:hover {
         box-shadow: 6px 6px 8px $font-2;
@@ -175,32 +182,36 @@ nav {
     }
 
     &__elements {
+        
         background: $gris-3;
         border-radius: 15px;
         box-shadow: 4px 4px 5px $gris-1;
         display: flex;
         overflow: hidden;
-        
+        transform-origin: 50% 90%;
+        animation-duration: 3s;
 
         &:hover {
             box-shadow: 4px 5px 8px $font-1;
-            transition: box-shadow 0.4s;
-/*pourquoi les animation ne repartent pas en sens inverse?*/
-
             .ok {
                 width: 70px;
-                transition-duration: 0.5s;
-
             }
 
             .fa-solid {
                 transform: rotate(360deg);
-                transition: transform 0.6s;
             }
         }
     }
 }
-
+.un{
+    animation-name: volets;
+}
+.deux{
+    animation-name: volets2;
+}
+.trois{
+    animation-name: volets3;
+}
 .produit {
     width: 100%;
     padding: 15px 0 0 15px;
@@ -217,6 +228,9 @@ nav {
 
     &__descr {
         @include produit__descr;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: "...";
     }
 }
 
@@ -240,12 +254,13 @@ nav {
         background-color: $tertiaire;
         text-align: center;
         width: 0px;
+        transition: all .4s ease-in-out;
 
         .fa-solid {
             margin-top: 25px;
             color: aliceblue;
             font-size: 25px;
-
+            transition: all .4s ease-in-out;
         }
     }
 }
