@@ -44,7 +44,8 @@
     }
     .section-desktop{
         display: flex;
-        height: 400px;
+        min-height: 400px;
+        padding-right: 30px;
         box-shadow: 0px 0px 12px gray;
         .box-left{
             width: 40%;
