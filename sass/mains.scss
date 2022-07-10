@@ -5,9 +5,10 @@
 
 .button {
     @include bouton;
-    transition:  opacity 1s;
+    transition:  all 0.5s;
     &:hover{
         opacity: 0.8;
+        box-shadow: 3px 1px 12px gray, -3px -1px 12px $gris-1;
     }
 }
 

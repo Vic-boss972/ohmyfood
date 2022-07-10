@@ -211,6 +211,10 @@ h2 {
     transform: rotateX(0deg);
   }
 }
+html {
+  background-color: #f6f6f6;
+}
+
 header .titre, main .titre {
   font-family: "roboto", sans-sherif;
   font-weight: bold;
@@ -315,10 +319,11 @@ header .titre, main .titre {
   min-width: 170px;
   color: white;
   cursor: pointer;
-  transition: opacity 1s;
+  transition: all 0.5s;
 }
 .button:hover {
   opacity: 0.8;
+  box-shadow: 3px 1px 12px gray, -3px -1px 12px #EAEAEA;
 }
 
 nav {
@@ -591,6 +596,10 @@ footer ul a i {
     margin-right: 15px;
   }
 
+  .main-restos {
+    margin-top: 30px;
+  }
+
   .resto {
     margin-top: 500px;
     text-align: center;
@@ -606,7 +615,7 @@ footer ul a i {
   .section-desktop {
     display: flex;
     height: 400px;
-    border-bottom: solid 2px #9356DC;
+    box-shadow: 0px 0px 12px gray;
   }
   .section-desktop .box-left {
     width: 40%;

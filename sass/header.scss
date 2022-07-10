@@ -1,5 +1,7 @@
-
 //header index
+html{
+    background-color: $gris-2;
+}
 header, main {
     .titre {
         @include roboto;
