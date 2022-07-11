@@ -1,8 +1,5 @@
 @media screen and (min-width: 703px) {
     //index
-    #point-map{
-        left: 40%;
-    }
     nav{
         text-align: center;
     }
@@ -73,13 +70,9 @@
         display: flex;
         flex-flow: column;
         text-align: right;
+        .fa-solid{
+            margin-right: 10px;
+        }
     
-    }
-}
-
-@media screen and (min-width: 1020px)
-{
-    #point-map{
-        left: 42%;
     }
 }

@@ -39,6 +39,8 @@ header, main {
         }
     }
     .map {
+        display: flex;
+        justify-content: center;
         padding: 20px;
         font-family: $roboto;
         font-weight: 500;
@@ -47,10 +49,11 @@ header, main {
 
         &__text {
             color: $font-2;
+            position: relative;
 
             i {
                 position: absolute;
-                left: 70px;
+                left: -30px;
                 color: $font-2;
             }
         }
