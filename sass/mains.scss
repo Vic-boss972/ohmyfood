@@ -147,9 +147,16 @@ nav {
             bottom: 0%;
             opacity: 0;
             left: 0%;
-            color: $primaire;
             z-index: 1;
-            transition: opacity 1s;
+            transition: opacity 1s;   
+            background-image: linear-gradient(225deg, $primaire, $secondaire);
+            filter: drop-shadow(0 20px 30px #28d8ff33);
+            color: black;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-box-decoration-break: clone;
+            
+    
 
         }
     }
