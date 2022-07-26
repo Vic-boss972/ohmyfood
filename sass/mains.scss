@@ -76,17 +76,19 @@ nav {
 
     .nouveau {
         font-family: $roboto;
+        font-weight: 500;
         position: absolute;
         top: 5%;
         right: 5%;
         background: #99E2D0;
         border: solid 1px #008766;
+        border-radius: 10%;
         color: #008766;
-        padding: 5px;
+        padding: 8px 10px;
+        transition: all 0.5s;
 
         &:hover {
-            font-weight: 500;
-            transition: 0.5s;
+            font-size: 1.2em;
         }
 
     }
@@ -129,7 +131,7 @@ nav {
 
     &__like {
         position: absolute;
-        font-size: 20px;
+        font-size: 30px;
         right: 1%;
         z-index: 1;
 
@@ -141,7 +143,7 @@ nav {
 
         &-on {
             position: absolute;
-            font-size: 20px;
+            font-size: 30px;
             top: 0;
             right: 0%;
             bottom: 0%;

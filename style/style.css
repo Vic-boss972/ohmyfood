@@ -385,17 +385,19 @@ nav ul a span {
 }
 .wrapper-card .nouveau {
   font-family: "roboto", sans-sherif;
+  font-weight: 500;
   position: absolute;
   top: 5%;
   right: 5%;
   background: #99E2D0;
   border: solid 1px #008766;
+  border-radius: 10%;
   color: #008766;
-  padding: 5px;
+  padding: 8px 10px;
+  transition: all 0.5s;
 }
 .wrapper-card .nouveau:hover {
-  font-weight: 500;
-  transition: 0.5s;
+  font-size: 1.2em;
 }
 
 .card {
@@ -431,7 +433,7 @@ nav ul a span {
 }
 .card__like {
   position: absolute;
-  font-size: 20px;
+  font-size: 30px;
   right: 1%;
   z-index: 1;
 }
@@ -440,7 +442,7 @@ nav ul a span {
 }
 .card__like-on {
   position: absolute;
-  font-size: 20px;
+  font-size: 30px;
   top: 0;
   right: 0%;
   bottom: 0%;
@@ -620,9 +622,11 @@ footer ul a i {
 
   .section-desktop {
     display: flex;
-    min-height: 400px;
-    padding-right: 30px;
-    box-shadow: 0px 0px 12px gray;
+    margin-bottom: 30px;
+    min-height: 200px;
+    padding: 30px;
+    box-shadow: 0px 0px 12px gray inset;
+    border-radius: 25px;
   }
   .section-desktop .box-left {
     width: 40%;
@@ -641,7 +645,10 @@ footer ul a i {
     width: 60%;
     max-width: 600px;
   }
-  .section-desktop .w-box .produit {
+  .section-desktop .w-box .box {
+    margin: 10px 0;
+  }
+  .section-desktop .w-box .box .produit {
     width: 100%;
   }
 
