@@ -181,14 +181,14 @@ h2 {
     color: black;
   }
   81% {
-    color: green;
-    border: solid 2px green;
+    color: #99E2D0;
+    border: solid 2px #99E2D0;
     transform: translate(-50%, -50%) scale(1.8);
   }
   83% {
     transform: translate(-50%, -50%) scale(1.9);
-    color: green;
-    border: solid 2px green;
+    color: #99E2D0;
+    border: solid 2px #99E2D0;
     top: 60%;
   }
   100% {

@@ -112,14 +112,14 @@
         
     }
     81%{
-        color: green;
-        border: solid 2px green;
+        color: $tertiaire;
+        border: solid 2px $tertiaire;
         transform: translate(-50%, -50%) scale(1.8);
     }
     83%{
         transform: translate(-50%, -50%) scale(1.9);
-        color: green;
-        border: solid 2px green;
+        color: $tertiaire;
+        border: solid 2px $tertiaire;
         top: 60%;
     }
     100%{
