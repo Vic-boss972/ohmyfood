@@ -226,7 +226,7 @@ nav {
         @include produit__nom;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: "...";
+        text-overflow: ellipsis;
 
     }
 
@@ -234,7 +234,7 @@ nav {
         @include produit__descr;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: "...";
+        text-overflow: ellipsis;
     }
 }
 
