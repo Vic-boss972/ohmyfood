@@ -314,10 +314,12 @@ header .titre, main .titre {
 
 .bg-francaise {
   background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: 100% 100%;
 }
 
 .bg-delice {
   background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: 100% 100%;
 }
 
 .resto {
